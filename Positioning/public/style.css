@@ -1,0 +1,66 @@
+body{
+    /*background-color: lightcoral;*/
+    /*color: #000;*/
+    /*text-shadow: 1px 1px red;*/
+}
+
+p{
+    /*border: 1px dashed red;
+    padding: 5px;*/
+}
+
+/*.relative{
+    position: relative;
+    top:    50px;
+    left: 100px;
+    
+}*/
+
+/*h3{
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    z-index: -10;
+}*/
+
+
+/*h3{
+    background-color: pink;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    z-index: -10;
+}*/
+
+.col1of3, .col2of3, .col3of3{
+    float: left;
+    width: 28%;
+    border: 1px solid black;
+    padding: 1.5%;
+    margin: 1%;
+}
+
+
+
+/*
+.col1of3{
+    float: left;
+    width: 65%;
+    border: 1px solid black;
+    padding: 1.5%;
+    margin: 1%;
+}
+
+.col2of3{
+      float: left;
+    width: 20%;
+    border: 1px solid black;
+    padding: 1.5%;
+    margin: 1%;
+}*/
+
+
+.clear{
+    clear: both;
+
+}

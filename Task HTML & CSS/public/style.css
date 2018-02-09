@@ -1,0 +1,34 @@
+#container{
+    border: 10px double brown;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%; 
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.navigation{
+    /*display: inline;*/
+    float: right;
+}
+.navigation>li{
+    display: inline;
+    margin: 20px;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-size: 2em;
+    color: brown;
+    text-transform: uppercase;
+}
+
+.navigation a:hover{
+    color: sandybrown;
+    text-decoration: underline;
+}

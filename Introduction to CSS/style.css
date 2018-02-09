@@ -1,0 +1,159 @@
+/*p{
+    color: yellow;
+    background-color: lightgray;
+}*/
+
+
+
+
+/* Universal Selector  */
+/**{
+    color: Yellow;
+    background-color: lightcoral; 
+}*/
+
+/* Type Selector  */
+/*h1{
+    color: greenyellow;
+}*/
+
+
+
+/* Class Selector  */
+
+/*.odd{
+    color: blue;
+}*/
+
+/*
+.even{
+    color: pink;
+}
+
+p.even{
+    color: lightgreen;
+}
+.youtube{
+    color: red;
+}*/
+
+
+
+
+/* ID Selector  */
+/*
+#special{
+    color: lightgray;
+}*/
+
+
+
+
+
+
+
+/*  Child Selector  */
+
+/*li>a{
+    color: pink;
+}*/
+
+
+/*  Descendant Selector  */
+/*
+div a{
+    color: greenyellow;
+}*/
+
+
+/* Adjacent Sibling Selector */
+/*
+h1+p{
+    color: red;
+}*/
+
+
+/* General Sibling Selector */
+/*
+h1~p{
+    color: gray;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+h1 {
+    font-family: "Courier New", monospace;
+    }
+* {
+    font-family: Arial, Verdana, sans-serif;
+    }
+
+    i {
+    color: red;
+    }
+i {
+    color: green;
+    }
+p b {
+    color: blue !important;
+}
+p b {
+    color: violet;
+    }
+p b {
+    color: pink;
+    }
+p {
+    font-size: 75%;
+    }
+
+p#intro {
+    font-size: 100%;
+    }*/
+
+
+
+/*
+div{
+    color: red;
+    background-color: black;
+    border: 2px solid blue;
+
+}
+
+.special{
+    border: 2px solid green;
+}
+
+p{
+  border: inherit;
+  
+}*/
+
+
+
+
+
+p{
+    color: rgb(255,105,200);
+    background-color: #b1f674;
+}
+
+
+
+
+

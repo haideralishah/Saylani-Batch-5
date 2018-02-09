@@ -1,0 +1,148 @@
+/*div.box {
+    height: 300px;
+    width: 300px;
+    background-color: #bbbbaa;
+    }
+p {
+    height: 75%;
+    width: 75%;
+    background-color: #0088dd;
+    }*/
+
+
+
+/*p{
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 900px;
+    min-height: 200px;
+    background-color: #0088dd;
+}*/
+
+
+
+p{
+    /*height: 50px;
+    width: 300px;*/
+      /*background-color: #0088dd;*/
+      /*overflow: scroll;
+      overflow-x: hidden;
+      overflow-y:scroll;*/
+
+
+
+      /*border-width: 10px;
+      border-top-width: 20px;
+      border-style:dashed;
+      border-bottom-style:solid;
+      border-color: green;
+      border-right-color: red;*/
+
+      /*border-width: 20px 10px 5px 25px;
+      border-style: dotted dashed solid double;
+      border-color: red green blue yellow;*/
+
+
+
+      /*border-width: 20px  25px;
+      border-style: dotted double;
+      border-color: red yellow;*/
+
+
+      /*border: 2px solid yellow;
+      border-top: 5px dashed red;
+      border-bottom: 5px dotted blue;
+      
+      padding: 50px;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 30px;
+      padding-right: 5px;
+
+      padding: 20px 30px 5px 40px;
+
+      
+      box-shadow: inset -5px -5px 15px red;*/
+
+
+}
+
+
+
+.first{
+    /*margin: 40px;*/
+    /*margin-bottom: 50px;
+    margin-top: 80px;*/
+
+    /*margin: 40px 20px 80px 10px;*/
+
+}
+.second{
+    /*margin-top: 50px; */
+}
+
+/*
+.box{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+a{
+     display: inline-block;
+}
+h1{
+    border: 2px dashed green;
+    display: inline-block;
+}
+span{
+    color: red;
+    font-weight: bold;
+    border: 2px dashed green;
+    display: block;
+}
+
+.future{
+    display: none;
+    visibility: hidden;
+}*/
+
+
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('fonts/Pacifico.ttf');
+}
+
+.special{
+    border: 2px double red;
+    /*border-image: url("images/download.png") 10 10 10 10 round;*/
+    background-color: pink;
+    color: red;
+    font-family: pacifico;
+    border-radius: 10px;
+    border-top-right-radius: 20px 40px;
+    border-bottom-right-radius:50px 20px;
+    border-bottom-left-radius:25px;
+    border-top-left-radius:40px;
+
+
+    /*border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;*/
+}
+
+/*ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+ol{
+    list-style-type: lower-roman;
+}*/
+
+/*ul.special{
+    list-style-image: url("images/heart.jpg");
+}*/
+
+
+
+ul{
+    list-style: inside circle;
+}

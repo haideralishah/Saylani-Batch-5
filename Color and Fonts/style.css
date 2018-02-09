@@ -1,0 +1,130 @@
+body{
+    background-color:  #c8c8c8;
+    color:  #ee3e80;
+}
+/*
+p{
+    background-color: darkcyan;
+    opacity: 0.5;
+}*/
+
+/*p{
+    background-color: rgb(100,170,170);
+    background-color: rgba(100,170,170, 0.5);
+
+}*/
+
+
+/*p{
+    background-color: hsla(180,45%,59%,0.5);
+    opacity: 0.5;
+}*/
+
+
+
+
+
+
+body{
+    font-family: Georgia, 'Times New Roman',  serif;
+}
+/*h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+div{
+    font-size: 32px;
+}
+div>p{
+    font-size: 75%;
+}
+
+p{
+    font-size: 100%;
+}*/
+/*
+
+div{
+    font-size: 32px;
+}
+
+div>p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h1{
+    font-weight: normal;
+    font-style: italic;
+}*/
+
+/*
+a{
+    text-decoration: none;
+}
+.upper{
+    text-transform: uppercase;
+    text-decoration: underline;
+    word-spacing: 1em;
+    text-align: right;
+}
+.lower{
+    text-transform: lowercase;
+    text-decoration: overline;
+    text-align: left;
+    letter-spacing: 0.5em;
+}
+.capitalize{
+    text-transform: capitalize;
+    text-decoration: line-through;
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+
+p{
+    line-height: 2em;
+}
+
+.vert-img{
+    vertical-align: sub;
+}
+
+h1{
+    text-indent:200px;
+    text-shadow: 2px 2px 4px yellow;
+}
+p:first-line{
+    font-size: 2em;
+    color: yellow;
+}*/
+
+
+
+
+
+a:link{
+    color: red;
+}
+a:visited{
+    color:yellow;
+}
+
+
+input:hover{
+    color: red;
+    background-color: blue;
+}
+
+
+input:focus{
+    color: pink;
+    background-color: yellow;
+}
+
+input:active{
+    color: green;
+    background-color: grey;
+}

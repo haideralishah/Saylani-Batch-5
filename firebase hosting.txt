@@ -1,0 +1,41 @@
+Create account on firebase.google.com with your gmail ID and password.
+
+create project
+
+install node from nodejs.org
+
+open CMD in admin mode
+
+
+npm install -g firebase-tools
+
+
+firebase login
+
+
+open cmd in your project folder and move all your files into public folder
+
+
+
+firebase init
+
+are you ready to proceed? Yes
+
+
+select hosting from options
+
+
+select the project you want to use
+
+
+what do you want to use as your public folder? public
+
+
+configure as single page app? n
+
+
+index.html already exists. do you want to overwrite? n
+
+
+
+firebase deploy
