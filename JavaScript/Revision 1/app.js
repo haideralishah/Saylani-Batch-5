@@ -96,26 +96,32 @@
 
 /////////////////Question 3
 
-var originalStr = document.getElementById('original');
-var findStr = document.getElementById('find');
-var replaceStr = document.getElementById('replace');
-var originalStringResult = document.getElementById('original-string');
-var updatedStringResult = document.getElementById('updated-string');
-
-function replace() {
-    var originalStrValue = originalStr.value;
-    var updatedValue;
-    var findStrValue = findStr.value;
-    for (var i = 0; i < originalStrValue.length; i++) {
-        if (originalStrValue.slice(i, i + findStrValue.length) === findStrValue) {
-            updatedValue = originalStrValue.slice(0, i + findStrValue.length) + replaceStr.value + originalStrValue.slice(replaceStr.length);
-        }
-    }
-    originalStringResult.innerHTML = originalStrValue;
-    updatedStringResult.innerHTML = updatedValue;
 
 
-}
+
+
+
+/////////////////Question 7
+
+// var originalStr = document.getElementById('original');
+// var findStr = document.getElementById('find');
+// var replaceStr = document.getElementById('replace');
+// var originalStringResult = document.getElementById('original-string');
+// var updatedStringResult = document.getElementById('updated-string');
+
+// function replace() {
+//     var originalStrValue = originalStr.value;
+//     var updatedValue;
+//     var findStrValue = findStr.value;
+//     for (var i = 0; i < originalStrValue.length; i++) {
+//         if (originalStrValue.slice(i, i + findStrValue.length) === findStrValue) {
+//             updatedValue = originalStrValue.slice(0, i) + replaceStr.value + originalStrValue.slice(i + findStrValue.length);
+//         }
+//     }
+//     originalStringResult.innerHTML = originalStrValue;
+//     updatedStringResult.innerHTML = updatedValue;
+// }
+
 
 
 
@@ -131,7 +137,155 @@ function replace() {
 
 
 
-/////////////////Question 7
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////Question 13
+
+
+
+
+// var strToConvert = document.getElementById('string-to-convert');
+// var convertedStr = document.getElementById('converted-str');
+// function convertToTitleCase(){    
+//     var firstChar = strToConvert.value.slice(0, 1);
+//     var remainingChar = strToConvert.value.slice(1);    
+//     firstChar = firstChar.toUpperCase();
+//     remainingChar = remainingChar.toLowerCase();
+//     var titledConvertedStr = firstChar + remainingChar;    
+//     convertedStr.innerHTML = titledConvertedStr;
+// }
+
+
+
+
+
+
+/////////////////Question 13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////Question 18
+
+
+
+// var fruites = ['apple', 'banana', 'grapes'];
+// var userinput = document.getElementById('userinput');
+// var available = document.getElementById('available');
+// function checkAvailability() {
+//     var userRequiredFruit = userinput.value;
+//     var foundIndex = fruites.indexOf(userRequiredFruit);
+//     if (foundIndex !== -1) {
+//         available.innerHTML = userRequiredFruit + ' is available at index ' + foundIndex + ' in our shop.';
+//     }
+//     else if (foundIndex === -1) {
+//         available.innerHTML = 'We are sorry. ' + userRequiredFruit + ' is not available in our shop.';
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+/////////////////Question 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////Question 24
+
+// var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// function checkVowels() {
+//     var vowelsCount = 0;
+//     var consonantsCount = 0;
+//     for () {
+
+
+
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////Question 24
+
+
+
+
+
+
+
+
+
+
+
+
+// circle area
+// A=πr`2
+
+// circumference
+// C=2πr
