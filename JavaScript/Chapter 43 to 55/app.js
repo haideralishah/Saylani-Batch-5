@@ -95,28 +95,40 @@ headingEl.innerHTML = 'fdasfsda';
 // }
 
 
+// var msgbox = document.getElementById('msgbox');
+// var flagFirst = true;
+// function showMsg() {
+//     if (flagFirst === true) {
+//         msgbox.innerHTML = 'Click the box to see the magic';
+//         flagFirst = false;
+//     }
+// }
 
 
-
-
+// function hideMsg() {
+//     msgbox.innerHTML = '';
+// }
 
 // function changeColor(providedEl) {
-//     var colorsArr = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
-//     var colorIndex = Math.floor(Math.random() * 6);
+//     var colorsArr = ['red', 'blue', 'green'];
+//     var backColorsArr = ['yellow', 'orange', 'purple'];
+//     var colorIndex = Math.floor(Math.random() * 3);
+//     var backColorIndex = Math.floor(Math.random() * 3);
 
 //     providedEl.style.color = colorsArr[colorIndex];
+//     providedEl.style.backgroundColor = backColorsArr[backColorIndex];
 // }
 
 
 
 
-function makeFieldGrey(providedEl) {
-    providedEl.style.backgroundColor = 'grey';
-}
+// function makeFieldGrey(providedEl) {
+//     providedEl.style.backgroundColor = 'grey';
+// }
 
-function makeFieldWhite(providedEl) {
-    providedEl.style.backgroundColor = 'white';
-}
+// function makeFieldWhite(providedEl) {
+//     providedEl.style.backgroundColor = 'white';
+// }
 
 
 
@@ -174,19 +186,65 @@ function makeFieldWhite(providedEl) {
 //     providedEl.className += ' fontColor';
 // }
 
-function getMargin(providedEl) {
+// function getMargin(providedEl) {
 
-    // providedEl.style.margin = '0 auto'
+//     // providedEl.style.margin = '0 auto'
 
-    var myMargin = providedEl.style.margin;
-    console.log(myMargin);
+//     var myMargin = providedEl.style.margin;
+//     console.log(myMargin);
 
-    var m = document.getComputedStyle("hello").margin;
-    console.log(m);
+//     // var m = document.getComputedStyle("hello").margin;
+//     // console.log(m);
 
 
-}
+// }
 
+
+
+// function makeItProm() {
+//     var userInput = prompt('what is your name?');
+
+//     var allPara = document.getElementsByTagName('p');
+//     // var allDiv = document.getElementsByTagName('div');
+//     // var allH1 = document.getElementsByTagName('h1');
+//     // var abcdEl = document.getElementsByTagName('abcd');
+//     // var lastParaMargin = allPara[allPara.length - 1].style.margin;
+
+//     allPara[0].innerHTML = 'hello ' + userInput;
+//     allPara[1].style.fontFamily = 'monospace';
+
+//     for (var i = 0; i < allPara.length; i++) {
+//         allPara[i].style.fontSize = '2em';
+//         if (i % 2 === 0) {
+//             allPara[i].style.color = 'blue';
+//         }
+//         else {
+//             allPara[i].style.color = 'green';
+//         }
+//     }
+//     // console.log(lastParaMargin);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// make all para color change alternatively
+// make all para background color change alternatively
+// make div para background font bold
+
+// var divRef = document.getElementById('container');
+// var allDivPara= divRef.getElementsByTagName('p');
+// console.log(allDivPara);
 
 
 
@@ -214,4 +272,24 @@ function getMargin(providedEl) {
 
 
 
+var allImgs = document.getElementsByTagName('img');
+var msgBox = document.getElementById('msg');
+function guessthecard(imageNumber) {
+    var blackHeartIndex = Math.floor(Math.random() * 4)
+    console.log(imageNumber, blackHeartIndex);
+    if (imageNumber === blackHeartIndex) {
+        for (var i = 0; i < allImgs.length; i++) {
+            allImgs[i].src = 'images/king.png'
+        }
+        allImgs[imageNumber].src='images/1.png';
+        msgBox.innerHTML = 'You Won!';
+    }
+    else {
+        for (var i = 0; i < allImgs.length; i++) {
+            allImgs[i].src = 'images/joker i.jpg'
+        }
+        allImgs[blackHeartIndex].src='images/1.png';
+        msgBox.innerHTML = 'Thaki Thiki Tha';
+    }
+}
 

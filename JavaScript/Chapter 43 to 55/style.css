@@ -13,3 +13,16 @@
 .fontColor{
     color: green;
 }
+
+p{
+
+    margin:2px;
+}
+
+
+
+img{
+    width: 200px;
+    height: 400px;
+    margin: 15px;
+}
