@@ -286,9 +286,133 @@ returns undefined
 // console.log(h1El.getAttribute('class'));
 
 
-var h1El = document.getElementById('hello');
-h1El.setAttribute('id','world')
-console.log(h1El.getAttribute('id'))
+// var h1El = document.getElementById('hello');
+// h1El.setAttribute('id','world')
+// console.log(h1El.getAttribute('id'))
+
+
+
+
+
+
+
+
+// Chapter 66
+/*
+Summary
+.nodeType = 1 if node is an element
+.nodeType = 2 if node is an attribute
+.nodeType = 3 if node is a text
+
+.attribute
+.nodeType  // 2 for attributes
+.nodeName  // attribute name
+.nodeValue // attribute value
+*/
+
+// var list = document.getElementById("para").attributes;
+// console.log(list[0].nodeType);  
+// console.log(list[0].nodeName);  
+// console.log(list[0].nodeValue);  
+
+
+
+
+
+
+
+
+
+
+
+// Chapter 67
+/*
+Summary
+.createElement
+.createTextNode
+.appendChild
+
+*/
+
+var containerEl = document.getElementById('container');
+// function addPara() {
+//     var customePara = document.createElement('p');
+//     customePara.setAttribute('class', 'big-font');
+
+//     var customeText = document.createTextNode('Hello World');
+//     customePara.appendChild(customeText);
+
+//     containerEl.appendChild(customePara)
+// }
+
+
+
+
+// var dummyText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, non vero dignissimos earum iure beatae possimus ex qui! Velit ratione harum molestiae fugit expedita dolores quae, qui perspiciatis consectetur reiciendis!';
+// function addPara() {
+
+//     var customePara = createCustomeElement('p', dummyText, 'big-font', 'para');
+
+//     console.log(customePara)
+//     containerEl.appendChild(customePara)
+// }
+
+
+
+// function createCustomeElement(elName, text, classNameAttr, idAttr) {
+//     var customePara = document.createElement(elName);
+//     customePara.setAttribute('class', classNameAttr);
+//     customePara.setAttribute('id', idAttr);
+
+//     var customeText = document.createTextNode(text);
+//     customePara.appendChild(customeText);
+//     // console.log(customePara)
+//     return customePara
+
+// }
+
+
+
+
+// Chapter 68
+/*
+Summary
+.insertBefore(newElement, refrence);
+.removeChild(targetNode)
+
+*/
+
+
+var num = 0;
+var containerEl = document.getElementById('container');
+function addPara() {
+    var customePara = document.createElement('p');
+    customePara.setAttribute('class', 'big-font');
+    customePara.setAttribute('id', 'key' + num++);
+    customePara.setAttribute('onClick', 'deleteProvidedEl(this)');
+
+    var customeText = document.createTextNode('Hello World ' + num);
+    customePara.appendChild(customeText);
+
+    containerEl.appendChild(customePara)
+}
+/*
+function addParaBefore() {
+    var customePara = document.createElement('p');
+    customePara.setAttribute('class', 'big-font');
+    customePara.setAttribute('onClick', 'delete(this)');
+    var customeText = document.createTextNode('Hello World ' + num++);
+    customePara.appendChild(customeText);
+
+    var targetNode = containerEl.firstChild;
+    containerEl.insertBefore(customePara, targetNode);
+
+}*/
+function deleteProvidedEl(providedEl) {
+    var parentTarget = providedEl.parentNode;
+    parentTarget.removeChild(providedEl);
+}
+
 
 
 
