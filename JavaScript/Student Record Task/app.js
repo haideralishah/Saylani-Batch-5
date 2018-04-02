@@ -34,3 +34,33 @@ function GenerateObject(stdName, DOB, roll) {
     this.dateOfBirth = DOB;
     this.rollNo = roll;
 }
+
+
+
+
+
+
+
+
+var recordsEl = document.getElementById('records');
+function printUserInformation() {
+    console.log('print fucntion called');
+    var localStorageData = localStorage.getItem('users')
+    if (localStorageData !== null) {
+        userArr = JSON.parse(localStorageData);
+        for (var i = 0; i < userArr.length; i++) {
+            var elementToAppend = createElement('p', userArr[i].studentName);
+            recordsEl.appendChild(elementToAppend);
+        }
+    }
+    else {
+        recordsEl.innerHTML = 'No Record Found';
+    }
+}
+function createElement(el, text) {
+    console.log(el, text);
+    var p = document.createElement(el);
+    var textNode = document.createTextNode(text);
+    p.appendChild(textNode);   
+    return p;
+}
