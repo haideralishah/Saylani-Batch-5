@@ -61,13 +61,55 @@
 
 
 
-function checkForSelection(el) {
-    var targetNodeEl = document.getElementById(el);
-    console.log(targetNodeEl.selectedIndex);
-    if (targetNodeEl.selectedIndex === 0) {
-        alert('Select a state.');
+// function checkForSelection(el) {
+//     var targetNodeEl = document.getElementById(el);
+//     console.log(targetNodeEl.selectedIndex);
+//     if (targetNodeEl.selectedIndex === 0) {
+//         alert('Select a state.');
+//     }
+//     return false;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function validateRadios(elRef) {
+    var radios = document.getElementsByName(elRef);
+    console.log(radios);
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            return false;
+        }
     }
+    alert("Please check one.");
     return false;
 }
+
+
+
+
+
+
+
+
 
 
