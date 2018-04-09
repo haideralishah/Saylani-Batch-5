@@ -12,12 +12,27 @@
 
 
 
-    <form onSubmit="return checkForLastName();">
+    <!-- <form onSubmit="return checkForLastName();">
         Please enter your last name.
         <br>
         <input type="text" id="lastNameField">
         <input type="submit" value="Submit Form">
+    </form> -->
+
+
+
+    <form onSubmit="return checkForSelection('states');">
+        <select id="states">
+            <option value="" selected="selected">
+                SELECT A STATE</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
     </form>
+
 
 
 
