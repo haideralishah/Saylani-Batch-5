@@ -1,18 +1,22 @@
+// fetch('https://api.github.com/users/haideralishah')
+//     .then(function (response) {
+//         console.log(response);
+//         return response.json();
+//     })
+//     .then(function (myJson) {
+//         console.log(myJson);
+//     });
+
+
 fetch('https://api.github.com/users/haideralishah')
-    .then(function (response) {
-        console.log(response);
+    .then((response) => {
+        console.log(response, 'response');
         return response.json();
     })
-    .then(function (myJson) {
-        console.log(myJson);
-    });
-
-
-
-
-
-
-
+    .then((userData) => {
+        console.log(userData,'userData');
+    })
+    
 
 
 
