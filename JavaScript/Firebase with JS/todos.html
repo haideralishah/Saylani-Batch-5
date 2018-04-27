@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase with JS</title>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Firebase configuration -->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDqKEhMJ-_mztRx_imbYs9gwJfJ3aFCgzg",
+            authDomain: "example-c1bd0.firebaseapp.com",
+            databaseURL: "https://example-c1bd0.firebaseio.com",
+            projectId: "example-c1bd0",
+            storageBucket: "example-c1bd0.appspot.com",
+            messagingSenderId: "976242645286"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+
+
+</head>
+
+<body onload="getMyTodoes()">
+
+    <nav class="navbar navbar-inverse nav-container-bgcolor">
+        <div class="container-fluid  nav-container-bgcolor">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Todo - Firebase</a>
+            </div>
+            <!-- <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li>
+                    <a href="signup.html">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li> -->
+                <li class=" custome-active" onClick='signoutUser()'>
+                    <a href="JavaScript:void(0)">
+                        <span class="glyphicon glyphicon-log-out "></span> Signout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div id="form-container">
+
+        <!-- <form onsubmit="return createAccount('userEmail', 'userPassword')"> -->
+        <div class="imgcontainer">
+            <!-- <img src="images/user.jpg" alt="Avatar" class="avatar"> -->
+        </div>
+
+        <div class="">
+
+            <label for="todoes">
+                <b>Todo</b>
+            </label>
+            <input type="text" placeholder="Enter Todo Task" name="todo" id="todoes" required>
+
+            <button onClick="addTodo('todoes')">Add Todo</button>
+            <!-- <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label> -->
+        </div>
+
+        <div id="error" class="alert alert-danger custome-error">
+        </div>
+
+
+
+
+        <ul id="my-todo" class="list-group">
+            <!-- <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li> -->
+        </ul>
+
+
+
+
+
+
+
+
+        <!-- <div class="" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot
+                            <a href="#">password?</a>
+                        </span>
+                    </div> -->
+        <!-- </form> -->
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
