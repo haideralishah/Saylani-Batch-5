@@ -16,7 +16,7 @@ function signInUser(emailRef, passRef) {
             db.ref(`users/${success.uid}/`).once('value', (snapshot) => {
                 // console.log('snapshot', snapshot.key, snapshot.val());
                 var userFetchedData = snapshot.val();
-                userFetchedData.uid = snapshot.key;
+                // userFetchedData.uid = snapshot.key;
                 console.log(userFetchedData);
                 localStorage.setItem('userData', JSON.stringify(userFetchedData));
                 location = 'todos.html'
@@ -104,8 +104,17 @@ function addTodo(todoRef) {
     var todo = document.getElementById(todoRef).value;
     var userUid = auth.currentUser.uid;
 
+    console.log(userUid)
     db.ref(`todos/${userUid}/`).push(todo);
+    db.ref(`todos/${userUid}/`).once("value",(data)=>{
+        var userTodo = data.val()
 
+        console.log(userTodo)
+        for(var key in userTodo){
+            console.log(userTodo[key])
+        }
+
+    })
 }
 
 
