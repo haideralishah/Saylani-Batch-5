@@ -23,7 +23,8 @@ function login() {
     console.log('login invoke', emailRef.value, passwordRef.value);
     firebase.auth().signInWithEmailAndPassword(emailRef.value, passwordRef.value)
         .then((success) => {
-            console.log('signin successfully', success);
+            console.log('signin successfully', success.user);
+            localStorage.setItem('currentUserUid', success.user.uid)
             location = './home.html';
         })
         .catch((error) => {
@@ -43,7 +44,11 @@ function addTodo() {
     console.log(todoObject);
     //set is used to override and set the current data
     //push is used to add new data and keep the privous one.
-    firebase.database().ref('/').push(todoObject);
+
+    let currentUserUid = firebase.auth().currentUser.uid;
+    firebase.database().ref('/todos/' + currentUserUid + '/').push(todoObject);
+    // firebase.database().ref('/todos/Ox0aVIAwlMVM2PA5e6vrUk4OPs62/').push(todoObject);
+
 }
 
 
@@ -52,7 +57,8 @@ var todoListRef = document.getElementById('todo-list');
 function fetchTodos() {
     // Reactive
     // Non Reactive
-    firebase.database().ref('/').on('child_added', (todoSnapshot) => {
+    let currentUserUid = localStorage.getItem('currentUserUid');
+    firebase.database().ref('/todos/' + currentUserUid + '/').on('child_added', (todoSnapshot) => {
         // console.log(todoSnapshot.key, 'todoRowData');
         let allTodos = todoSnapshot.val();
         allTodos.nodeId = todoSnapshot.key;
@@ -72,9 +78,18 @@ function createCustomeLi(id, text) {
     var delBtnText = document.createTextNode('Delete');
     deleteBtn.appendChild(delBtnText);
     deleteBtn.onclick = function (event) {
+        let currentUserUid = localStorage.getItem('currentUserUid');
         console.log('delete called ', event.path[1].id);
-        firebase.database().ref('/' + event.path[1].id + '/').remove();
+        firebase.database().ref('/todos/' + currentUserUid + '/' + event.path[1].id + '/').remove();
     }
     li.appendChild(deleteBtn);
     return li;
 }
+
+let currentUserUid = localStorage.getItem('currentUserUid');
+firebase.database().ref('/todos/' + currentUserUid + '/').on('child_removed', (snapshot) => {
+    let deletedTodo = snapshot.val();
+    deletedTodo.key = snapshot.key;
+    var nodeToRemove = document.getElementById(deletedTodo.key);
+    todoListRef.removeChild(nodeToRemove);
+})
