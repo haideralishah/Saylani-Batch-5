@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDqKEhMJ-_mztRx_imbYs9gwJfJ3aFCgzg",
+            authDomain: "example-c1bd0.firebaseapp.com",
+            databaseURL: "https://example-c1bd0.firebaseio.com",
+            projectId: "example-c1bd0",
+            storageBucket: "example-c1bd0.appspot.com",
+            messagingSenderId: "976242645286"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body onload="fetchCall()">
+
+    <input type="text" id="todo">
+    <button onclick="addTodo()">Add Todo</button>
+
+    <ol id="todo-list">
+
+    </ol>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
