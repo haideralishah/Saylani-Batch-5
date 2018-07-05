@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB4xN8ZCc_VaAABn0S4Wu9pauABb3rGKf8",
+      authDomain: "example2-156e5.firebaseapp.com",
+      databaseURL: "https://example2-156e5.firebaseio.com",
+      projectId: "example2-156e5",
+      storageBucket: "example2-156e5.appspot.com",
+      messagingSenderId: "467990734015"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
+</head>
+
+<body>
+
+  <label>Email:
+    <input type="email" name="email" id="email" />
+  </label>
+  <label>Password:
+    <input type="password" name="password" id="password" />
+  </label>
+
+
+  <button onClick="login()">Login</button>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

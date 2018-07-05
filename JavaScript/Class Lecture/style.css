@@ -1,0 +1,111 @@
+.flex-container{
+    /* border: 1px solid red; */
+    /* to make element behave like flexbox */
+    /* display: flex; */
+
+
+    /* flex-direction: row ; */
+    /* flex-direction: row-reverse ; */
+    /* flex-direction: column ; */
+    /* flex-direction: column-reverse ; */
+
+
+
+
+    /* flex-wrap: wrap; */
+
+
+    /* justify-content: flex-start;
+    justify-content: flex-end; */
+
+    /* justify-content: center; */
+
+    /* justify-content: space-between; */
+
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+
+    /* height: 100px; */
+    /* align-items: flex-start; */
+    /* align-items: stretch; */
+
+    /* align-items:center; */
+    /* justify-content: center; */
+
+
+    /* flex-wrap: wrap;
+    align-content: space-evenly; */
+
+}
+
+
+
+
+.flex-container div{
+    /* border: 1px solid blue; */
+    /* width: 100px; */
+}
+
+.fc{
+    /* flex-grow: 1; */
+    /* order: 4; */
+    /* flex-basis: 200px; */
+}
+.pk{
+    /* flex-grow: 1; */
+    /* order: 3; */
+    /* flex-shrink:4; */
+    /* flex: 0 0 200px; */
+    /* align-self: flex-start; */
+}
+.kh{
+    /* flex-grow: 2; */
+    /* order: -1; */
+}
+.pa{
+    /* flex-grow: 1;
+    order: 2; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red; 
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container div{
+    border: 1px solid blue; 
+    width: 100px;
+}
+.special-1,.special-2,.special-3,.special-4{
+    flex-grow: 1;
+}
+.special-3{
+    /* flex-basis: 200px; */
+    /* flex: 2 0 150px; */
+    flex-grow: 3;
+}
+.special-4{
+    flex-grow: 0;
+    flex-shrink: 5;
+}
+.special-2{
+    align-self: flex-start;
+}
+.special-3{
+    align-self: flex-end;
+}
