@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBj71WyfocMv6c2tw019W9rg_zl1frgLdM",
+            authDomain: "fir-learning-6a8d7.firebaseapp.com",
+            databaseURL: "https://fir-learning-6a8d7.firebaseio.com",
+            projectId: "fir-learning-6a8d7",
+            storageBucket: "fir-learning-6a8d7.appspot.com",
+            messagingSenderId: "333978526201"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body onload='bringChat()'>
+
+
+    <textarea id="msg"></textarea>
+    <button onclick="sendMsg()">Send</button>
+    <div id="all-messages"></div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
